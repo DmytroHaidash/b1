@@ -89,7 +89,7 @@ return [
     'expertise' => [
         'title' => 'Експертиза і оцінка',
     ],
-    'question' => [
+    'expert' => [
         'phone' => 'Телефон',
         'btn' => 'Задати питання',
         'message' => 'Питання',

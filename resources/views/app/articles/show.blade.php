@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            @auth
+          {{--  @auth
                 <div class="infobar-item">
                     <div class="infobar-item__heading">@lang('common.favorites')</div>
                     <div class="infobar-item__body">
@@ -32,7 +32,7 @@
                         </i>
                     </div>
                 </div>
-            @endauth
+            @endauth--}}
         </div>
     </figure>
 

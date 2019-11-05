@@ -1,0 +1,30 @@
+$body-bg: #1A202E;
+$body-color: #fff;
+$headings-color: #fff;
+$link-color: $headings-color;
+$gold: #ecc94b;
+$primary: #1A202E;
+$dark: #1A202E;
+$secondary: $gold;
+
+$font-size-base: 1.15rem;
+$headings-font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+$link-hover-decoration: none;
+
+$border-radius: 0;
+$headings-margin-bottom: 1.25rem;
+$paragraph-margin-bottom: 1.25rem;
+
+$grid-gutter-width: 1.25rem;
+
+
+$breadcrumb-bg: $body-bg;
+$breadcrumb-active-color: $body-color;
+
+
+$container-max-widths: (
+        sm: 640px,
+        md: 720px,
+        lg: 960px,
+        xl: 1280px
+);

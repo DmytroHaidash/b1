@@ -12,8 +12,8 @@
             <div class="col-auto">
                 <ul class="menu list-unstyled">
                     <li class="nav-item">
-                        <a href="{{ url('/') }}" class="nav-link nav-link--logo">
-                            <svg width="60" height="60">
+                        <a href="{{ url('/') }}" class="nav-link nav-link--logo mt-2">
+                            <svg width="120" height="120">
                                 <use xlink:href="#logo"></use>
                             </svg>
                         </a>
@@ -31,7 +31,7 @@
                 </ul>
             </div>
             <div class="col-auto">
-                <div class="navbar navbar--center navbar--left flex-nowrap">
+                <div class="navbar navbar--center navbar--left flex-nowrap mr-3">
                     <nav class="nav align-items-center flex-nowrap pr-3 pr-lg-0">
                         <a href="{{ url('/') }}" class="nav-link nav-link--logo d-lg-none">
                             <svg width="60" height="60">

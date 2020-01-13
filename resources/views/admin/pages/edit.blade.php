@@ -28,7 +28,7 @@
                     </fieldset>
                 @endforeach
             </block-editor>
-
+            @includeIf('partials.admin.meta', ['meta' => $page->meta()->first()])
             <div class="mt-4 d-flex align-items-center">
                 <button class="btn btn-primary">Сохранить</button>
             </div>

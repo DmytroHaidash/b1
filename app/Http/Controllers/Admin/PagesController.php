@@ -37,7 +37,15 @@ class PagesController extends Controller
     public function update(Request $request, Page $page): RedirectResponse
     {
         $page->updateTranslation();
-
+        if($request->has('meta')){
+            foreach ($request->get('meta') as $key => $meta) {
+                $page->meta()->updateOrCreate([
+                    'metable_id' => $page->id
+                ], [
+                    $key => $meta
+                ]);
+            }
+        }
         return back();
     }
 }

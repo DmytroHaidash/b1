@@ -82,6 +82,14 @@ class ProductsController extends Controller
             Media::setNewOrder($request->input('media'));
         }
 
+        if ($request->has('meta')) {
+            foreach ($request->get('meta') as $key => $meta) {
+                $product->meta()->create([
+                    $key => $meta
+                ]);
+            }
+        }
+
         return redirect()->route('admin.products.edit', $product);
     }
 
@@ -125,7 +133,15 @@ class ProductsController extends Controller
             }
             Media::setNewOrder($request->input('media'));
         }
-
+        if($request->has('meta')){
+            foreach ($request->get('meta') as $key => $meta) {
+                $product->meta()->updateOrCreate([
+                    'metable_id' => $product->id
+                ], [
+                    $key => $meta
+                ]);
+            }
+        }
         return redirect()->route('admin.products.edit', $product);
     }
 

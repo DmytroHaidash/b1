@@ -13,9 +13,9 @@ class DatabaseSeeder extends Seeder
 	{
 		$this->call([
 			RolesTableSeeder::class,
-			UsersTableSeeder::class,
-			PagesTableSeeder::class,
-			SlidersTableSeeder::class,
+            UsersTableSeeder::class,
+            PagesTableSeeder::class,
+            SlidersTableSeeder::class,
 		]);
 
 		if (config('app.env') === 'local') {
